@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagriti's Fitness</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+body {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('img.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgb(146 169 177);
+    font-family: 'Redressed', cursive;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    font-size: 28px;
+}
+
+.left img {
+    width: 65px;
+}
+
+.left div {
+    text-align: center;
+}
+
+.mid {
+    display: block;
+    width: 51%;
+    margin: 4px auto;
+    /* border: 2px solid red; */
+
+}
+
+.right {
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.btn {
+    border: 1px solid black;
+    background-color: rgb(26, 21, 21);
+    color: aliceblue;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-family: 'Redressed', cursive;
+    font-size: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(53, 51, 51);
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: auto;
+    padding: 7px 26px;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: black;
+    text-decoration: underline;
+}
+
+.container{
+    border: 2px solid black;
+    margin: 124px 100px;
+    padding: 30px 30px;
+    width: 30%;
+    border-radius: 14px;
+}
+
+.form-group input{
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 6px 3px;
+    font-family: 'Redressed', cursive;
+    font-size: 20px;
+    width: 50%;
+}
+
+.container h3{
+    text-align: center;
+}
+
+.container button{
+    display: block;
+    margin: 15px auto;
+    width: 52%;
+}
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="silhouette-3137485_1280.png" alt="logo">
+            <div>Nirvana</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Contact Us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Join us in the journey of finding yourself</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
